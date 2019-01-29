@@ -24,7 +24,8 @@ class App < Sinatra::Base
   end
 
   get "/:operation/:number1/:number2" do
-    
+    @add = params[:operation]
+    binding.pry
   end
 
 end
